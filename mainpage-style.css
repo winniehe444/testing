@@ -32,7 +32,6 @@ code,
 del,
 dfn,
 em,
-img,
 ins,
 kbd,
 q,
@@ -112,6 +111,8 @@ section {
 
 body {
     line-height: 1;
+    background-image: url('artbg.png');
+    background-size: cover;
 }
 
 ol,
@@ -159,16 +160,17 @@ body {
     font-family: var(--third-font);
 }
 
-.signupBox{
-    width: 50%;
+.postBox{
+    width: 60%;
     height: 85%;
     box-shadow: 5px 10px 15px black;
     border-radius: 10px;
     background-color: white;
     margin-top: 5%;
     margin-bottom: 5%;
-    margin-left: 25%;
+    margin-left: 5%;
     padding: 20px;
+    float: left;
 }
 
 .fields{
@@ -195,10 +197,72 @@ body {
     transition-duration: 0.4s;
 }
 
+.button:hover {
+    background-color: white;
+    color: #1b4587;
+}
+
+.signupBox{
+    width: 50%;
+    height: 85%;
+    box-shadow: 5px 10px 15px black;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    padding: 20px;
+}
+
+.categoryBox{
+    font-size: 12px;
+    padding: 7px;
+    margin-bottom: 7px;
+    border-radius: 15px;
+    background-color: #ff6700;
+    border: 1px solid #ff6700;
+    transition-duration: 0.4s;
+    text-align: center;
+    display: inline-block;
+}
+
+.categoryBox:hover {
+    background-color: white;
+    color: #1b4587;
+}
+
+.category{
+    color: #ebebeb;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Noto Sans';
+    margin: 0;
+    padding: 0;
+}
+
+.pfp{
+    border-radius: 50%;
+}
+
 p, label{
     color: black;
     font-size: 20px;
     font-weight: bold;
+}
+
+p.title{
+    color: #1b4587;
+    font-size: 40px;
+    font-family: 'Rancho';
+    padding-top: 10px;
+}
+
+p.details{
+    color: black;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
 }
 
 p.greetings{
@@ -210,6 +274,84 @@ p.greetings{
 
 p.misc{
     font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+p.misc3{
+    font-size: 15px;
+}
+
+p.misc2{
+    font-size: 10px;
+    margin-top: 0;
+}
+
+p.text{
+    padding-top: 10px;
+}
+
+.writeComment{
+    vertical-align: top;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 30px;
+    float: left;
+    box-shadow: 5px 10px 15px black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.commentSection{
+    vertical-align: top;
+    width: 30%;
+    margin-left: 30px;
+    margin-top: 30px;
+    float: left;
+    box-shadow: 5px 10px 15px black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.comment{
+    padding: 5px;
+}
+
+.infoSec{
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.comment{
+    margin: 0;
+}
+
+.imgMain{
+    border-radius: 15px;
+    padding-top: 10px;
+    width: 100%;
+    max-height: 100%;
+}
+
+.name-date{
+    float: right;
+}
+
+.pfp{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-right: 10px;
 }
 
 .user>a {
@@ -599,6 +741,85 @@ h2 {
 
 /* FOOTER CODE */
 
+/* FOOTER CODE */
+
+.vl {
+    border-left: 0.3rem solid var(--primary);
+    height: 75%;
+    opacity: 20%;
+}
+
+.website-footer {
+    width: 100%;
+    height: 30rem;
+    background-color: var(--text-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-with-title {
+    display: inline-block;
+    margin-right: 10rem;
+}
+
+.footer-logo {
+    height: 12rem;
+    width: 12rem;
+    align-self: center;
+}
+
+.footer-title {
+    margin-top: 1rem;
+    color: var(--primary);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.footer-slogan {
+    margin-top: 0.5rem;
+    color: var(--primary);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.footer-copyright {
+    margin-top: 0.5rem;
+    color: var(--primary);
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9rem;
+    /* align-items: center; */
+}
+
+.footer-col-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.footer-item {
+    margin-top: 1.2rem;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    width: 100%;
+    height: 1.5rem;
+    padding: 0.3rem;
+    transition: all 0.2s;
+}
+
+.footer-item:hover {
+    background-color: rgba(143, 143, 143, 0.4);
+    color: var(--primary);
+}
 
 
 /* END OF FOOTER CODE */
